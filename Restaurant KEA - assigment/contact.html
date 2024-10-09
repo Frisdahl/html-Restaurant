@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | Restaurant KEA</title>
+</head>
+<body>
+
+    <header>
+        <h1>Restaurant KEA</h1>
+        <nav id="main-nav" aria-label="main navigation">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="food-menu.html">Menu</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+
+    <main>
+        <section class="contact-information">
+            <address>
+                <p>Guldbergsgade 29N 2200 Copenhagen</p>
+            </address>
+            <p>Phone no.: <a href="tel:20825370">20 82 53 70</a></p>
+            <p>E-mail: <a href="mailto:info@restaurantkea.dk">info@restaurantkea.dk</a></p>
+        </section>
+
+
+        <section class="google-maps-img">
+            <img src="restaurant_assets/img/map.jpg" alt="google maps view of restaurant KEA from above">
+        </section>
+
+
+
+        <section class="contact-form">
+            <form>
+                <fieldset>
+                    <legend>Contact form</legend>
+
+                    <div>
+                        <label for="txtname">Full name</label>
+                        <input type="text" id="txtname" name="full_name" maxlength="100"required pattern="([a-zA-Z]+ )+[a-zA-Z]+">
+                    </div>
+
+                    <div>
+                        <label for="txtphone">Phone no.</label>
+                        <input type="text" id="txtphone" name="phone" minlength="8" maxlength="15" required pattern="^(\+?\d{1,3}[-.\s]?)?(\(?\d{3}\)?[-.\s]?)?\d{3}[-.\s]?\d{4}$">
+                    </div>
+
+                    <div>
+                        <label for="txtemail">Email</label>
+                        <input type="email" id="txtemail" name="email" maxlength="100" required>
+                    </div>
+
+                    <div>
+                        <label for="numpersons">Persons</label>
+                        <input type="number" id="numpersons" name="persons" style="width: 50px;" required>
+                    </div>
+
+                    <div>
+                        <label for="txtdate">Date and time</label>
+                        <input type="date" id="txtdate" name="date" style="width: 150px" required>
+                    </div>
+
+                    <label for="txtmessage">Further information</label>
+                    <div>
+                        <textarea name="message" id="txtmessage" maxlength="150"></textarea>
+                    </div>
+                    <div>
+                        <input type="submit">
+                    </div>
+                </fieldset>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p id="copyright">
+            &copy; 2023 KEA Development
+        </p>
+    </footer>
+    
+</body>
+</html>
